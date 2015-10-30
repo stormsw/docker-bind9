@@ -1,0 +1,16 @@
+include "/etc/bind/rndc.key";
+
+zone "int.thomson.com" {
+	type master;
+	file "/etc/bind/zones/db.int.thomson.com";
+};
+
+zone "int.thomsonreuters.com" {
+        type master;
+        file "/etc/bind/zones/db.int.thomsonreuters.com";
+};
+
+zone "dockers.virtual" {
+	type master;
+	file "/etc/bind/zones/db.dockers.virtual";
+};

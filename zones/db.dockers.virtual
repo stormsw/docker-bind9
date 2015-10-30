@@ -1,0 +1,17 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    604800
+@	IN	SOA	ns1.dockers.virtual. ns2.dockers.virtual. (
+                          2         ; Serial
+                     604800         ; Refresh
+                      86400         ; Retry
+                    2419200         ; Expire
+                     604800 )       ; Negative Cache TTL
+  ;
+dockers.virtual.      IN  NS  ns1.dockers.virtual.
+dockers.virtual.      IN  A   172.29.135.30
+ns1		      IN  A   172.29.135.30
+ns2		      IN  A   172.29.135.30
+cis         	      IN  A   172.29.135.30
+www     	      IN  CNAME   dockers.virtual.
