@@ -13,7 +13,8 @@ RUN apt-get update && \
 ADD named.* /tmp/etc/bind/
 ADD zones/* /tmp/etc/bind/zones/
 RUN cp -rf /tmp/etc/bind/. /etc/bind/ && chown -R bind:bind /etc/bind
-USER bind
+#USER bind
 EXPOSE 53/udp
 VOLUME ["/etc/bind"]
-CMD ["named","-g","-d","5"]
+#CMD ["named","-g","-d","5","-u","bind"]
+CMD ["named","-g","-u","bind"]

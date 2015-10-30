@@ -1,16 +1,16 @@
 options {
 	directory "/var/cache/bind";
-
-	forwarders {
-	  # Give here your ISP DNS IP’s
-	  # GOOGLE PUBLIC DNS
-	  8.8.8.8;    # gateway or router
-	  # Ciklum Kyiv Primary DNS
-	  192.168.32.5;
-	  # Ciklum Kyiv Sec
-	  192.168.200.5;
-	  192.168.201.5;
-	};
+#	recursion yes;
+#	forwarders {
+#	  # Give here your ISP DNS IP’s
+#	  # GOOGLE PUBLIC DNS
+#	  8.8.8.8;    # gateway or router
+#	  # Ciklum Kyiv Primary DNS
+#	  192.168.32.5;
+#	  # Ciklum Kyiv Sec
+#	  192.168.200.5;
+#	  192.168.201.5;
+#	};
 
 	auth-nxdomain no;
 #	listen-on-v6 { any; };
