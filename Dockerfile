@@ -12,7 +12,7 @@ RUN apt-get update && \
       lsb-release && rm -rf /var/lib/apt/lists/*;
 ADD named.* /tmp/etc/bind/
 ADD zones/* /tmp/etc/bind/zones/
-RUN cp -rf /tmp/etc/bind/. /etc/bind/ && chown -R bind:bind /etc/bind
+RUN cp /tmp/etc/bind/. /etc/bind/ -R&& chown -R bind:bind /etc/bind
 #USER bind
 EXPOSE 53/udp
 VOLUME ["/etc/bind"]
