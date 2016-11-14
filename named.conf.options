@@ -1,6 +1,6 @@
 options {
 	directory "/var/cache/bind";
-	recursion yes;
+#	recursion yes;
 	forwarders {
 #	  # Give here your ISP DNS IP’s
 #	  # GOOGLE PUBLIC DNS

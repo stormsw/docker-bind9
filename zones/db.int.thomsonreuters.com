@@ -18,4 +18,5 @@ bower			IN  A   10.52.207.109
 wsd			IN  A   10.223.192.36
 git.sami		IN  A   10.52.131.68
 ui			IN  A   10.184.40.85
+bams-sami               IN  A   10.216.133.102
 www     		IN  CNAME	int.thomsonreuters.com.
